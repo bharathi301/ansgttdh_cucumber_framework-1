@@ -19,6 +19,7 @@ public class ValidLogin extends Generic_Test
 		   String password = Datadriven_excelread.getData("Sheet1", 1, 1);
 		   OnlineShoppingSitePage lp = new OnlineShoppingSitePage(driver);
 		        lp.setusername(username);
+			System.out.println("username entered successfully");
 		        lp.setpassword(password);
 				lp.clicklogin();
 			    lp.title(driver);
